@@ -1,0 +1,104 @@
+/* CSS переменные */
+:root {
+    --color-primary: #1A1A1A;
+    --color-accent: #FF6B35;
+    --color-bg: #f5f5f5;
+    --color-text: #222;
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* base  */
+body {
+    font-family: 'Oswald', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; margin-bottom: var(--spacing-md); }
+h3 { font-size: 1.2rem; margin-bottom: var(--spacing-sm); }
+
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+/* HEADER */
+header {
+    background: var(--color-primary);
+    color: white;
+    padding: var(--spacing-lg);
+    text-align: center;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #333;
+}
+
+nav a {
+    display: block;
+    padding: var(--spacing-md);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background: var(--color-accent);
+}
+
+/* SECTION FUNCTIONAL */
+section, footer {
+    display: none;
+}
+
+:target {
+    display: block;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--color-accent);
+    padding: var(--spacing-sm);
+}
+
+tbody tr:nth-child(even) {
+    background: #eee;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: var(--spacing-md);
+}
+
+/* ADAPTIVE */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: var(--spacing-lg);
+}
+
+
+
